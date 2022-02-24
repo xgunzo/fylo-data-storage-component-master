@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600;700;800&display=swap');
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url("images/bg-mobile.png") no-repeat center center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.wrapper {
+    width: 85%;
+    display: block;
+    margin: 0 auto;
+}
+
+.banner {
+    margin-top: 9rem;
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 15px 100px 15px 15px;
+    height: 13rem;
+}
+
+.logo {
+    padding-top: 2.5em;
+    padding-left: 2.5em;
+}
+
+.flex-images {
+    display: flex;
+    padding-top: 2em;
+    padding-left: 2em;
+    gap: 1em;
+}
+
+.image-container {
+    background-color: hsl(229, 57%, 11%);
+    height: 3em;
+    width: 3em;
+    border-radius: 10px;
+}
+
+.image-container img {
+    margin: 0 auto;
+    display: block;
+    padding-top: 0.75em;
+    transform: scale(1.1);
+}
+
+.usage {
+    margin-top: 1.25em;
+    background-color: hsl(228, 56%, 26%);
+    border-radius: 15px 15px 15px 15px;
+    height: 10rem;
+    font-family: 'Manrope', sans-serif;
+}
+
+.usage p {
+    color: hsl(243, 100%, 93%);
+    text-align: center;
+    padding-top: 2em;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+
+.range {
+    -webkit-appearance: none;
+    margin: 0 auto;
+    display: block;
+    background: linear-gradient(to right, hsl(6, 100%, 80%) 0%, hsl(335, 100%, 65%) 70%, hsl(335, 100%, 45%), hsl(229, 57%, 11%) 73%) 60%;
+    margin-top: 1em;
+    border-radius: 20px;
+    width: 85%;
+}
+
+.range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #eee;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.range::before {
+    content: "0 GB";
+    position: relative;
+    top: 2em;
+    color: hsl(243, 100%, 93%);
+    font-family: 'Manrope', sans-serif;
+}
+
+.range::after {
+    content: "1000 GB";
+    position: relative;
+    top: 2em;
+    color: hsl(243, 100%, 93%);
+    font-family: 'Manrope', sans-serif;
+}
+
+.gigabytes-left {
+    background-color: #eee;
+    margin: 3em auto;
+    display: block;
+    width: 60%;
+    border-radius: 10px;
+    height: 5em;
+}
+
+.gigabytes-left-desktop {
+    display: none;
+}
+
+.gigabytes-left p {
+    color: hsl(229, 7%, 55%);
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 700;
+    bottom: 0.75em;
+    height: 100%;
+}
+
+.number {
+    color: #333;
+    font-size: 35px;
+    font-weight: 800;
+    font-family: 'Raleway', sans-serif;
+}
+
+.used-number {
+    color: #eee;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+}
+
+.gigabytes {
+    position: relative;
+    bottom: 0.5em;
+    padding-left: 0.5em;
+}
+
+.attribution {
+    position: fixed;
+    bottom: 0;
+    font-size: 11px;
+    text-align: center;
+    color: hsl(243, 100%, 93%);
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    width: 85%;
+    padding-bottom: 2em;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 1280px) {
+
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background: url("images/bg-desktop.png") no-repeat center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .flex {
+        margin-top: 25%;
+        display: flex;
+    }
+
+    .banner {
+        margin: 0 auto;
+        height: 13rem;
+        width: 33%;
+    }
+
+    .image-container img {
+        padding-top: 0.8em;
+    }
+
+    .usage {
+        margin-top: 1.25em;
+        height: 11rem;
+        font-family: 'Manrope', sans-serif;
+        width: 60%;
+        margin-top: 2em;
+    }
+
+    .usage p {
+        text-align: left;
+        padding-top: 2.5em;
+        width: 85%;
+    }
+
+    .range {
+        -webkit-appearance: none;
+        margin: 0 auto;
+        display: block;
+        background: linear-gradient(to right, hsl(6, 100%, 80%) 0%, hsl(335, 100%, 65%) 70%, hsl(335, 100%, 45%), hsl(229, 57%, 11%) 78%) 60%;
+        margin-top: 1.5em;
+        border-radius: 20px;
+        width: 85%;
+    }
+
+    .range::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        background-color: #eee;
+        width: 1em;
+        height: 1em;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+
+
+    .range::before {
+        content: "0 GB";
+        position: relative;
+        top: 2em;
+        color: hsl(243, 100%, 93%);
+        font-family: 'Manrope', sans-serif;
+    }
+
+    .range::after {
+        content: "1000 GB";
+        position: relative;
+        top: 2em;
+        color: hsl(243, 100%, 93%);
+        font-family: 'Manrope', sans-serif;
+    }
+
+    .gigabytes-left {
+        display: none;
+    }
+    
+    .gigabytes-left-desktop {
+        display: block;
+        background-color: #eee;
+        margin: 3em auto;
+        width: 60%;
+        border-radius: 10px;
+        height: 5em;
+    }
+    
+
+    .gigabytes-left-desktop p {
+        color: hsl(229, 7%, 55%);
+        margin: 0 auto;
+        display: block;
+        position: relative;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 700;
+        bottom: 0.75em;
+        height: 100%;
+    }
+
+    .number {
+        color: #333;
+        font-size: 35px;
+        font-weight: 800;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .used-number {
+        color: #eee;
+        font-weight: 600;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .gigabytes {
+        position: relative;
+        bottom: 0.5em;
+        padding-left: 0.5em;
+    }
+
+}
