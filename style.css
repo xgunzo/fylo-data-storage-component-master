@@ -63,7 +63,7 @@ body {
 }
 
 .usage p {
-    color: hsl(243, 100%, 93%);
+    color: hsl(227, 13%, 71%);
     text-align: center;
     padding-top: 2em;
     width: 90%;
@@ -99,6 +99,7 @@ body {
     top: 2em;
     color: hsl(243, 100%, 93%);
     font-family: 'Manrope', sans-serif;
+    font-weight: 700;
 }
 
 .range::after {
@@ -107,6 +108,7 @@ body {
     top: 2em;
     color: hsl(243, 100%, 93%);
     font-family: 'Manrope', sans-serif;
+    font-weight: 700;
 }
 
 .gigabytes-left {
@@ -176,32 +178,57 @@ body {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        background: url("images/bg-desktop.png") no-repeat center;
+        background: url("images/bg-desktop.png");
+        background-size: unset;
+        background-position-y: bottom;
+        background-color: hsl(229, 57%, 11%);
         background-repeat: no-repeat;
-        background-size: cover;
+    }
+
+    .wrapper {
+        width: 70%;
     }
 
     .flex {
-        margin-top: 25%;
+        margin-top: 30%;
         display: flex;
+        gap: 1em;
     }
 
     .banner {
         margin: 0 auto;
-        height: 13rem;
-        width: 33%;
+        height: 15rem;
+        width: 40%;
+    }
+
+    .logo {
+        height: 3em;
+        padding-top: 3em;
+        padding-left: 3em;
+    }
+
+    .flex-images {
+        display: flex;
+        padding-top: 2em;
+        padding-left: 3em;
+        gap: 1em;
+    }
+
+    .image-container {
+        height: 4em;
+        width: 4em;
     }
 
     .image-container img {
-        padding-top: 0.8em;
+        padding-top: 1.25em;
+        height: 1.25em;
     }
 
     .usage {
-        margin-top: 1.25em;
+        margin-top: 4em;
         height: 11rem;
         font-family: 'Manrope', sans-serif;
         width: 60%;
-        margin-top: 2em;
     }
 
     .usage p {
@@ -215,7 +242,7 @@ body {
         margin: 0 auto;
         display: block;
         background: linear-gradient(to right, hsl(6, 100%, 80%) 0%, hsl(335, 100%, 65%) 70%, hsl(335, 100%, 45%), hsl(229, 57%, 11%) 78%) 60%;
-        margin-top: 1.5em;
+        margin-top: 1.75em;
         border-radius: 20px;
         width: 85%;
     }
@@ -232,19 +259,11 @@ body {
 
 
     .range::before {
-        content: "0 GB";
-        position: relative;
-        top: 2em;
-        color: hsl(243, 100%, 93%);
-        font-family: 'Manrope', sans-serif;
+        top: 2.25em;
     }
 
     .range::after {
-        content: "1000 GB";
-        position: relative;
-        top: 2em;
-        color: hsl(243, 100%, 93%);
-        font-family: 'Manrope', sans-serif;
+        top: 2.25em;
     }
 
     .gigabytes-left {
@@ -253,43 +272,52 @@ body {
     
     .gigabytes-left-desktop {
         display: block;
+        position: relative;
+        bottom: 13em;
+        left: 8.5em;
         background-color: #eee;
         margin: 3em auto;
-        width: 60%;
-        border-radius: 10px;
-        height: 5em;
+        width: 35%;
+        border-radius: 10px 10px 0px 10px;
+        height: 5.5em;
     }
     
+    .gigabytes-left-desktop::before {
+        content: "";
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        border-left: 15px solid transparent;
+        border-right: 15px solid #eee;
+        border-top: 15px solid #eee;
+        border-bottom: 15px solid transparent;
+        right: 0px;
+        bottom: -22px;
+
+    }
 
     .gigabytes-left-desktop p {
         color: hsl(229, 7%, 55%);
         margin: 0 auto;
         display: block;
         position: relative;
+        text-align: center;
         text-transform: uppercase;
-        font-size: 13px;
+        font-size: 14px;
         font-weight: 700;
-        bottom: 0.75em;
+        bottom: 1em;
         height: 100%;
     }
 
     .number {
         color: #333;
-        font-size: 35px;
+        font-size: 40px;
         font-weight: 800;
         font-family: 'Raleway', sans-serif;
+        padding-right: 0.1em;
     }
 
-    .used-number {
-        color: #eee;
-        font-weight: 600;
-        font-family: 'Raleway', sans-serif;
+    .attribution {
+        width: 70%;
     }
-
-    .gigabytes {
-        position: relative;
-        bottom: 0.5em;
-        padding-left: 0.5em;
-    }
-
 }
