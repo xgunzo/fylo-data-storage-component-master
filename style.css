@@ -182,7 +182,7 @@ body {
         background-size: unset;
         background-position-y: bottom;
         background-color: hsl(229, 57%, 11%);
-        background-repeat: no-repeat;
+        background-repeat: repeat-x;
     }
 
     .wrapper {
@@ -320,4 +320,105 @@ body {
     .attribution {
         width: 70%;
     }
+}
+
+@media screen and (min-width: 1440px) {
+
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background: url("images/bg-desktop.png");
+        background-size: contain;
+        background-position-y: bottom;
+        background-color: hsl(229, 57%, 11%);
+        background-repeat: repeat-x;
+    }
+
+    .wrapper {
+        width: 70%;
+    }
+
+    .flex {
+        gap: 2em;
+    }
+
+    .banner {
+        width: 45%;
+    }
+
+    .usage {
+        width: 60%;
+    }
+
+}
+
+@media screen and (min-width: 1550px) {
+
+    .flex {
+        margin-top: 25%;
+    }
+
+}
+
+@media screen and (min-width: 1660px) {
+
+    .flex {
+        margin-top: 20%;
+    }
+
+}
+
+@media screen and (min-width: 1750px) {
+
+    .wrapper {
+        width: 65%;
+    }
+
+    .flex {
+        margin-top: 20%;
+    }
+
+    .gigabytes-left-desktop {
+        left: 10em;
+    }
+
+    .attribution {
+        width: 65%;
+    }
+
+}
+
+@media screen and (min-width: 1920px) {
+
+    .wrapper {
+        width: 65%;
+    }
+
+    .flex {
+        margin-top: 24%;
+    }
+
+    .banner {
+        width: 35%;
+        height: 15rem;
+    }
+
+    .usage {
+        height: 11rem;
+    }
+
+    .gigabytes-left-desktop {
+        width: 30%;
+        left: 13em;
+    }
+
+    .span {
+        font-size: 60px;
+    }
+
+    .attribution {
+        width: 65%;
+    }
+
 }
