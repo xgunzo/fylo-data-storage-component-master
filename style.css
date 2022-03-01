@@ -76,7 +76,7 @@ body {
     -webkit-appearance: none;
     margin: 0 auto;
     display: block;
-    background: linear-gradient(to right, hsl(6, 100%, 80%) 0%, hsl(335, 100%, 65%) 70%, hsl(335, 100%, 45%), hsl(229, 57%, 11%) 73%) 60%;
+    background-color: hsl(229, 57%, 11%);    
     margin-top: 1em;
     border-radius: 20px;
     width: 85%;
@@ -88,8 +88,20 @@ body {
     background-color: #eee;
     width: 1em;
     height: 1em;
+    position: relative;
+    right: 0.2em;
     border-radius: 50%;
     cursor: pointer;
+}
+
+.range::-webkit-slider-runnable-track {
+    background-image: linear-gradient(90deg, #ffa399, #ff4d97);
+    min-width: 100%;
+    display: block;
+    position: relative;
+    right: 2em;
+    border-radius: 1em;
+    padding: 0.1px;
 }
 
 
@@ -241,7 +253,7 @@ body {
         -webkit-appearance: none;
         margin: 0 auto;
         display: block;
-        background: linear-gradient(to right, hsl(6, 100%, 80%) 0%, hsl(335, 100%, 65%) 70%, hsl(335, 100%, 45%), hsl(229, 57%, 11%) 78%) 60%;
+        background-color: hsl(229, 57%, 11%);
         margin-top: 1.75em;
         border-radius: 20px;
         width: 85%;
@@ -257,6 +269,9 @@ body {
         cursor: pointer;
     }
 
+    .range::-webkit-slider-runnable-track {
+        background-image: linear-gradient(90deg, #ffa399, #ff4d97);
+    }
 
     .range::before {
         top: 2.25em;
